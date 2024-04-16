@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>hotel-sorensen</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/index.css">
+  </head>
+  <body>
+      <!-- Navigation bar -->
+      <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="#">Fells Wargo</a>
+            </div>
+          </div>
+      </nav>
+     <!-- website title -->
+    <div class="container">
+      <h1>Fells Wargo Sign Up</h1><br>
+      <form id="bankForm">
+        <!--Username login-->
+        <div class="form-group">
+          <label for="text-input">Username (or email):</label>
+          <input type="text" class="form-control" id="user-input">
+        </div>
+
+        <!--Password input-->
+        <div class="form-group">
+          <label for="password-input">Password:</label>
+          <input type="password" class="form-control" id="password">
+        </div>
+
+         <!--Verify password input-->
+         <div class="form-group">
+          <label for="verifypassword-input">Verify Password:</label>
+          <input type="password" class="form-control" id="verifypassword">
+        </div>
+
+        <!-- card input -->
+        <form>
+          <label for="cardNumber">Credit Card Number:</label><br>
+          <input type="text" id="cardNumber" name="cardNumber" pattern="[0-9]{16}" title="Please enter a 16-digit credit card number" required><br><br>
+        <!-- expiration date -->
+          <label for="expireDate">Expiration Date (MM/YYYY):</label><br>
+          <input type="text" id="expireDate" name="expireDate" pattern="(0[1-9]|1[0-2])\/[0-9]{4}" title="Please enter the expiration date in the format MM/YYYY" required><br><br>
+          <!-- cvv number -->
+          <label for="cvv">CVV:</label><br>
+          <input type="text" id="cvv" name="cvv" pattern="[0-9]{3,4}" title="Please enter a 3 or 4 digit CVV number" required><br><br>
+          <!-- check box to remember password -->
+          <input type="checkbox" id="rememberPassword" name="rememberPassword">
+          <label for="rememberPassword">Remember Password</label><br><br>
+        <!--Submit button-->
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="reset" class="btn btn-secondary">Clear</button>
+
+      </form>
+    </div>
+
+    <!--Footer-->
+   
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="scripts/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>hotel-sorensen</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/index.css">
+  </head>
+  <body>
+      <!-- Navigation bar -->
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">Fells Wargo</a>
+          </div>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="navbar-brand" href="index.html">Log Out</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>Bank Account Balance</h1>
+        <div class="balance">
+            <p>Your current account balance is: <span id="balanceAmount">$0.00</span></p>
+        </div>
+        <label for="incorrectBalance">Click here if balance is incorrect:</label>
+        <input type="checkbox" id="incorrectBalance" onchange="toggleTextArea()">
+        <br>
+        <textarea id="problemTextArea" placeholder="Please describe the issue..."></textarea>
+        <div id="submitBtn">
+            <button onclick="submitProblem()">Submit</button>
+        </div>
+    </div>
+    
+
+        <!--Footer-->
+       <footer>
+        
+        </footer>
+      
+          <!-- jQuery -->
+          <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+          <!-- Bootstrap JS -->
+          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+          <script src="scripts/bank.js"></script>
+        </body>
+      </html>
