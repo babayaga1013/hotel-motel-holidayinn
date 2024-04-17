@@ -9,7 +9,7 @@ $(document).ready(function() {
       var password = $("#password").val();
       var verifypassword = $("#verifypassword").val();
   
-      // Only allow user through if username and pwd is csis
+      // Only allow user through if username and pwd are valid
       if (cardNumber.length == 16 && cvv.length == 3 && password === verifypassword) {
         window.location.href = "bank.html";
       } else {
