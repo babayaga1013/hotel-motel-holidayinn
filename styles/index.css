@@ -22,6 +22,9 @@ footer {
     bottom: 0;
     width: 100%;
 }
+a {
+    color:#eefa03;
+}
 
 #repo {
     color:#FF0000;
