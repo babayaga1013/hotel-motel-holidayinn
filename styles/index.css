@@ -23,34 +23,6 @@ footer {
     width: 100%;
 }
 
-footer h6 {
-    color: #343a40;
-    font-weight: bold;
-    margin-bottom: 15px;
-}
-
-footer ul {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-footer ul li {
-    margin-bottom: 5px;
-}
-
-footer ul li a {
-    color: #6c757d;
-}
-
-footer ul li a:hover {
-    color: #343a40;
-}
-
-footer .py-3 {
-    background-color: #343a40;
-    color: #fff;
-}
-
 #repo {
     color:#FF0000;
 }
